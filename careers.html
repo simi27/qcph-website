@@ -3,172 +3,124 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Careers — Quality Care Private Hospital</title>
-  <meta name="description" content="Join the Quality Care Private Hospital team. View current vacancies in nursing, allied health, administration, and specialist positions.">
+  <title>Careers — Quality Care Hospital</title>
+  <meta name="description" content="Join the Quality Care Private Hospital team. View current vacancies.">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
   <!-- Header -->
-  <header class="header">
-    <div class="header-inner">
-      <a href="index.html" class="logo">
-        <div class="logo-icon">Q</div>
-        Quality<span>Care</span>
-      </a>
-      <nav class="nav" role="navigation" aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="careers.html" class="active">Careers</a>
-        <a href="contact.html" class="nav-cta">Contact</a>
-      </nav>
-      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+  <header class="header-wrapper">
+    <div class="header-left">
+      <a href="index.html"><img class="header-logo" src="assets/images/logo.jpg" alt="Quality Care Hospital Logo" onerror="this.style.display='none'"></a>
+    </div>
+    <div class="header-hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    <nav class="header-nav" id="headerNav">
+      <div class="header-dropdown">
+        <span class="header-nav-link">Wards ▾</span>
+        <div class="header-dropdown-menu">
+          <a class="header-dropdown-item" href="services.html">General Ward</a>
+          <a class="header-dropdown-item" href="services.html">Private Room</a>
+          <a class="header-dropdown-item" href="services.html">Maternity &amp; Gynae Ward</a>
+          <a class="header-dropdown-item" href="services.html">Postnatal Care</a>
+          <a class="header-dropdown-item" href="services.html">Neonatal ICU</a>
+          <a class="header-dropdown-item" href="services.html">Pre-Baby Support</a>
+        </div>
+      </div>
+      <a class="header-nav-link" href="services.html">Our Services</a>
+      <a class="header-nav-link" href="about.html">About Us</a>
+      <a class="header-nav-link" href="blog.html">Blog</a>
+      <a class="header-nav-link" href="contact.html">Contact Us</a>
+    </nav>
+    <div class="header-right">
+      <div class="header-search-box" style="position: relative;">
+        <input placeholder="Search" class="header-search-input" type="text">
+        <svg class="header-search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      </div>
     </div>
   </header>
 
   <!-- Page Hero -->
   <section class="page-hero">
-    <div class="container">
-      <div class="breadcrumb">
-        <a href="index.html">Home</a> / <span>Careers</span>
-      </div>
-      <h1>Join Our Team</h1>
-      <p>Be part of a team that's passionate about making a difference. Explore opportunities at Quality Care Private Hospital.</p>
-    </div>
+    <div class="breadcrumb"><a href="index.html">Home</a> / <span>Careers</span></div>
+    <h1>Join Our Team</h1>
+    <p>Be part of a team that's passionate about making a difference.</p>
   </section>
 
-  <!-- Why Work Here -->
-  <section class="section">
-    <div class="container about-grid">
+  <!-- Why -->
+  <section class="section section-white">
+    <div class="two-col-grid container" style="max-width: 1100px;">
       <div>
-        <span class="section-tag">Why Work Here</span>
-        <h2 class="section-title">More Than a Job — A Calling</h2>
-        <p>At Quality Care Private Hospital, we believe that the best healthcare comes from people who feel valued, supported, and inspired. We invest in our team with ongoing training, competitive benefits, and a culture of respect and collaboration.</p>
+        <h2>More Than a Job — A Calling</h2>
+        <p style="color: var(--c-gray); margin-bottom: 16px;">At Quality Care Private Hospital, we believe the best healthcare comes from people who feel valued, supported, and inspired. We invest in our team with ongoing training, competitive benefits, and a culture of respect.</p>
         <div class="feature-list">
-          <div class="feature-item">
-            <div class="feature-check">✓</div>
-            <div><strong>Competitive compensation</strong> — Above-market salaries and benefits</div>
-          </div>
-          <div class="feature-item">
-            <div class="feature-check">✓</div>
-            <div><strong>Continuous learning</strong> — CPD, specialist training, and study leave</div>
-          </div>
-          <div class="feature-item">
-            <div class="feature-check">✓</div>
-            <div><strong>Career growth</strong> — Clear progression paths and mentorship</div>
-          </div>
-          <div class="feature-item">
-            <div class="feature-check">✓</div>
-            <div><strong>Wellness focus</strong> — Employee wellness programmes and support</div>
-          </div>
-          <div class="feature-item">
-            <div class="feature-check">✓</div>
-            <div><strong>Modern facilities</strong> — State-of-the-art equipment and work environment</div>
-          </div>
+          <div class="feature-item"><div class="feature-check">✓</div><div><strong>Competitive compensation</strong> — Above-market salaries</div></div>
+          <div class="feature-item"><div class="feature-check">✓</div><div><strong>Continuous learning</strong> — CPD, training, and study leave</div></div>
+          <div class="feature-item"><div class="feature-check">✓</div><div><strong>Career growth</strong> — Clear progression paths and mentorship</div></div>
+          <div class="feature-item"><div class="feature-check">✓</div><div><strong>Modern facilities</strong> — State-of-the-art equipment and environment</div></div>
         </div>
       </div>
-      <div class="about-image">
-        [INSERT IMAGE: Hospital staff — doctors, nurses, and team members]
-      </div>
+      <div class="placeholder-image">[INSERT IMAGE: Hospital staff team]</div>
     </div>
   </section>
 
-  <!-- Current Openings -->
+  <!-- Jobs -->
   <section class="section section-alt">
-    <div class="container">
-      <span class="section-tag">Current Vacancies</span>
-      <h2 class="section-title">Open Positions</h2>
-      <p class="section-subtitle">We're looking for dedicated professionals to join our growing team.</p>
+    <div class="container" style="max-width: 800px;">
+      <h2 style="text-align: center; margin-bottom: 32px;">Current Vacancies</h2>
 
-      <div style="margin-top: 40px;">
-        <div class="job-card">
-          <div class="job-header">
-            <div>
-              <h3 class="job-title">Registered Nurse — ICU</h3>
-              <div class="job-meta">
-                <span>📍 Durban, KZN</span>
-                <span>⏰ Full-time (rotating shifts)</span>
-                <span>📅 Posted: 1 June 2026</span>
-              </div>
-            </div>
-            <span class="job-tag">Nursing</span>
+      <div class="job-card">
+        <div class="job-header">
+          <div>
+            <h3 class="job-title">Registered Nurse — ICU</h3>
+            <div class="job-meta"><span>📍 Louis Trichardt, Limpopo</span><span>⏰ Full-time</span><span>📅 Posted: 1 June 2026</span></div>
           </div>
-          <p class="job-desc">We are seeking experienced ICU-trained registered nurses to join our 24-bed intensive care unit. Candidates must hold a valid SANC registration and post-basic ICU qualification.</p>
-          <a href="contact.html" class="btn btn-ghost">Apply Now →</a>
+          <span class="job-tag">Nursing</span>
         </div>
-
-        <div class="job-card">
-          <div class="job-header">
-            <div>
-              <h3 class="job-title">Physiotherapist</h3>
-              <div class="job-meta">
-                <span>📍 Durban, KZN</span>
-                <span>⏰ Full-time</span>
-                <span>📅 Posted: 28 May 2026</span>
-              </div>
-            </div>
-            <span class="job-tag">Allied Health</span>
-          </div>
-          <p class="job-desc">Join our rehabilitation team providing inpatient and outpatient physiotherapy services. Experience in orthopaedic and post-surgical rehab is advantageous.</p>
-          <a href="contact.html" class="btn btn-ghost">Apply Now →</a>
-        </div>
-
-        <div class="job-card">
-          <div class="job-header">
-            <div>
-              <h3 class="job-title">Medical Receptionist</h3>
-              <div class="job-meta">
-                <span>📍 Durban, KZN</span>
-                <span>⏰ Full-time</span>
-                <span>📅 Posted: 25 May 2026</span>
-              </div>
-            </div>
-            <span class="job-tag">Administration</span>
-          </div>
-          <p class="job-desc">We need a friendly, organised receptionist for our outpatient clinic. Experience with medical practice management software and medical aid schemes is required.</p>
-          <a href="contact.html" class="btn btn-ghost">Apply Now →</a>
-        </div>
-
-        <div class="job-card">
-          <div class="job-header">
-            <div>
-              <h3 class="job-title">Specialist Radiologist</h3>
-              <div class="job-meta">
-                <span>📍 Durban, KZN</span>
-                <span>⏰ Part-time / Sessional</span>
-                <span>📅 Posted: 20 May 2026</span>
-              </div>
-            </div>
-            <span class="job-tag">Medical Specialist</span>
-          </div>
-          <p class="job-desc">Our diagnostic imaging department seeks a qualified radiologist for sessional reporting. Experience in MRI and CT reporting essential. Flexible sessions available.</p>
-          <a href="contact.html" class="btn btn-ghost">Apply Now →</a>
-        </div>
-
-        <div class="job-card">
-          <div class="job-header">
-            <div>
-              <h3 class="job-title">Cleaner — Environmental Services</h3>
-              <div class="job-meta">
-                <span>📍 Durban, KZN</span>
-                <span>⏰ Full-time</span>
-                <span>📅 Posted: 18 May 2026</span>
-              </div>
-            </div>
-            <span class="job-tag">Support</span>
-          </div>
-          <p class="job-desc">Maintain the highest standards of cleanliness and infection control across our hospital. Previous cleaning experience, preferably in a healthcare setting.</p>
-          <a href="contact.html" class="btn btn-ghost">Apply Now →</a>
-        </div>
+        <p class="job-desc">Seeking experienced ICU-trained registered nurses for our intensive care unit. Valid SANC registration and post-basic ICU qualification required.</p>
+        <a href="contact.html" class="btn btn-primary btn-sm" style="text-decoration: none;">Apply Now</a>
       </div>
 
-      <div style="text-align: center; margin-top: 32px; padding: 32px; background: var(--primary-light); border-radius: var(--radius);">
-        <p style="font-weight: 600; color: var(--primary-dark); margin-bottom: 8px;">Don't see the right role?</p>
-        <p style="color: var(--text-mid); margin-bottom: 16px;">We're always looking for talented professionals. Send us your CV and we'll keep you on file.</p>
-        <a href="contact.html" class="btn btn-accent">Send Open Application</a>
+      <div class="job-card">
+        <div class="job-header">
+          <div>
+            <h3 class="job-title">Physiotherapist</h3>
+            <div class="job-meta"><span>📍 Louis Trichardt, Limpopo</span><span>⏰ Full-time</span><span>📅 Posted: 28 May 2026</span></div>
+          </div>
+          <span class="job-tag">Allied Health</span>
+        </div>
+        <p class="job-desc">Join our rehabilitation team providing inpatient and outpatient physiotherapy services. Orthopaedic and post-surgical rehab experience advantageous.</p>
+        <a href="contact.html" class="btn btn-primary btn-sm" style="text-decoration: none;">Apply Now</a>
+      </div>
+
+      <div class="job-card">
+        <div class="job-header">
+          <div>
+            <h3 class="job-title">Medical Receptionist</h3>
+            <div class="job-meta"><span>📍 Louis Trichardt, Limpopo</span><span>⏰ Full-time</span><span>📅 Posted: 25 May 2026</span></div>
+          </div>
+          <span class="job-tag">Administration</span>
+        </div>
+        <p class="job-desc">Friendly, organised receptionist for our outpatient clinic. Medical practice management software experience required.</p>
+        <a href="contact.html" class="btn btn-primary btn-sm" style="text-decoration: none;">Apply Now</a>
+      </div>
+
+      <div class="job-card">
+        <div class="job-header">
+          <div>
+            <h3 class="job-title">Cleaner — Environmental Services</h3>
+            <div class="job-meta"><span>📍 Louis Trichardt, Limpopo</span><span>⏰ Full-time</span><span>📅 Posted: 18 May 2026</span></div>
+          </div>
+          <span class="job-tag">Support</span>
+        </div>
+        <p class="job-desc">Maintain the highest standards of cleanliness and infection control. Previous healthcare cleaning experience preferred.</p>
+        <a href="contact.html" class="btn btn-primary btn-sm" style="text-decoration: none;">Apply Now</a>
+      </div>
+
+      <div style="text-align: center; margin-top: 32px; padding: 32px; background: var(--c-light); border-radius: 12px;">
+        <p style="font-weight: 600; color: var(--c-primary); margin-bottom: 8px;">Don't see the right role?</p>
+        <p style="color: var(--c-gray); margin-bottom: 16px;">Send us your CV and we'll keep you on file.</p>
+        <a href="contact.html" class="btn btn-primary btn-md">Send Open Application</a>
       </div>
     </div>
   </section>
@@ -178,53 +130,38 @@
     <div class="container">
       <h2>Ready to Make a Difference?</h2>
       <p>Join a team that values your skills, supports your growth, and shares your passion for patient care.</p>
-      <div class="btn-group" style="justify-content: center;">
-        <a href="contact.html" class="btn btn-primary">Apply Today</a>
-        <a href="about.html" class="btn btn-outline">Learn About Us</a>
+      <div class="btn-group" style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+        <a href="contact.html" class="btn-white">Apply Today</a>
+        <a href="about.html" class="btn-outline">Learn About Us</a>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="index.html" class="logo">
-            <div class="logo-icon">Q</div>
-            Quality<span>Care</span>
-          </a>
-          <p>Excellence in private healthcare. Serving our community with compassion, skill, and integrity for over 25 years.</p>
-        </div>
-        <div>
-          <h4>Quick Links</h4>
-          <a href="index.html">Home</a>
-          <a href="about.html">About Us</a>
-          <a href="services.html">Our Services</a>
-          <a href="careers.html">Careers</a>
-          <a href="contact.html">Contact</a>
-        </div>
-        <div>
-          <h4>Services</h4>
-          <a href="services.html">Cardiology</a>
-          <a href="services.html">Orthopaedics</a>
-          <a href="services.html">Maternity</a>
-          <a href="services.html">Diagnostics</a>
-          <a href="services.html">Emergency</a>
-        </div>
-        <div>
-          <h4>Contact</h4>
-          <a href="#">123 Hospital Road, Durban</a>
-          <a href="tel:+271****6789">+27 12 345 6789</a>
-          <a href="mailto:info@qualitycarehospital.co.za">info@qualitycarehospital.co.za</a>
-          <a href="contact.html">Get Directions</a>
-        </div>
+  <footer class="footer-main">
+    <div class="footer-main-container">
+      <div class="footer-left">
+        <img alt="Logo" class="footer-logo" src="assets/images/logo.jpg" onerror="this.style.display='none'">
+        <h3>About Us</h3>
+        <p>Quality Care Hospital is committed to providing exceptional healthcare services with compassion and expertise.</p>
+        <a class="footer-btn" href="#">Find a Doctor<svg class="footer-btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg></a>
+        <a class="footer-btn" href="careers.html">Explore Careers<svg class="footer-btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg></a>
+        <a class="footer-btn" href="blog.html">Sign Up for free E-Newsletters<svg class="footer-btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg></a>
       </div>
-      <div class="footer-bottom">
-        <span>&copy; <span id="year">2026</span> Quality Care Private Hospital. All rights reserved.</span>
-        <span>Site by <a href="https://pawatech.co.za">PawaTech</a></span>
+      <div class="footer-center">
+        <div class="footer-group"><h4>Wards &gt;</h4><ul><li><a href="services.html">General Ward</a></li><li><a href="services.html">Private Room</a></li><li><a href="services.html">Maternity &amp; Gynae Ward</a></li><li><a href="services.html">Postnatal Care</a></li><li><a href="services.html">Neonatal ICU</a></li><li><a href="services.html">Pre-Baby Support</a></li></ul></div>
+        <div class="footer-group"><h4>Our Services &gt;</h4><ul><li><a href="services.html">Antenatal Care</a></li><li><a href="services.html">Maternity &amp; Day Services</a></li><li><a href="services.html">Ultrasound</a></li><li><a href="services.html">Menopause Care</a></li></ul></div>
+        <div class="footer-group"><h4>Patient Amenities &gt;</h4><ul><li>Waiting Area</li><li>Parking Area</li><li>Directions</li></ul></div>
+      </div>
+      <div class="footer-right">
+        <div class="footer-group"><h4>Contact Us</h4><p class="footer-contact-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>83 Grobler Street, Louis Trichardt</p><p class="footer-contact-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>015 516 5439</p><p class="footer-contact-item"><svg width="16" height="16" viewBox="0 0 448 512" fill="currentColor"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157z"/></svg>063 985 5425</p><p class="footer-contact-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>admin@qualitycarehospital.co.za</p></div>
+        <div class="footer-group"><h4>Pharmacy &gt;</h4><ul><li>In-Patient Prescriptions</li><li>Out-Patient Pharmacy</li><li>Medication Counseling</li></ul></div>
+        <div class="footer-group"><h4>Laboratory &gt;</h4><ul><li>Lancet Laboratories are on site.</li><li class="footer-link"><a href="https://www.lancet.co.za/" target="_blank">Visit Lancet Website</a></li></ul></div>
       </div>
     </div>
+    <hr class="footer-divider">
+    <div class="footer-links"><a href="#">Terms &amp; Conditions</a><a href="#">Privacy Policy</a><a href="#">Notice of Privacy Practices</a><a href="#">Notice of Nondiscrimination</a><a href="#">Digital Accessibility Statement</a><a href="#">Advertising &amp; Sponsorship Policy</a></div>
+    <div class="footer-bottom"><p>We are dedicated to maintaining transparency, privacy, and accessibility in all our services.</p><div class="footer-bottom-right"><div class="footer-language-select"><p>Language:</p><select class="footer-language-dropdown"><option>English</option></select></div><button class="footer-feedback-btn" onclick="window.location='contact.html'">Feedback</button></div></div>
   </footer>
 
   <script src="assets/js/main.js"></script>

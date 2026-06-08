@@ -3,291 +3,408 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quality Care Private Hospital — Excellence in Healthcare</title>
-  <meta name="description" content="Quality Care Private Hospital provides exceptional medical care with state-of-the-art facilities, expert specialists, and compassionate nursing across South Africa.">
+  <title>Quality Care Hospital</title>
+  <meta name="description" content="Quality Care Private Hospital provides affordable, high-quality healthcare with compassion and expertise.">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="favicon.ico">
 </head>
 <body>
 
-  <!-- Header -->
-  <header class="header">
-    <div class="header-inner">
-      <a href="index.html" class="logo">
-        <div class="logo-icon">Q</div>
-        Quality<span>Care</span>
+  <!-- ===== HEADER ===== -->
+  <header class="header-wrapper">
+    <div class="header-left">
+      <a href="index.html">
+        <img class="header-logo" src="assets/images/logo.jpg" alt="Quality Care Hospital Logo" onerror="this.style.display='none'; this.parentElement.innerHTML='QC'">
       </a>
-      <nav class="nav" role="navigation" aria-label="Main navigation">
-        <a href="index.html" class="active">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="careers.html">Careers</a>
-        <a href="contact.html" class="nav-cta">Contact</a>
-      </nav>
-      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+    </div>
+
+    <div class="header-hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+
+    <nav class="header-nav" id="headerNav">
+      <div class="header-dropdown">
+        <span class="header-nav-link">Wards ▾</span>
+        <div class="header-dropdown-menu">
+          <a class="header-dropdown-item" href="services.html">General Ward</a>
+          <a class="header-dropdown-item" href="services.html">Private Room</a>
+          <a class="header-dropdown-item" href="services.html">Maternity &amp; Gynae Ward</a>
+          <a class="header-dropdown-item" href="services.html">Postnatal Care</a>
+          <a class="header-dropdown-item" href="services.html">Neonatal ICU</a>
+          <a class="header-dropdown-item" href="services.html">Pre-Baby Support</a>
+        </div>
+      </div>
+      <a class="header-nav-link" href="services.html">Our Services</a>
+      <a class="header-nav-link" href="about.html">About Us</a>
+      <a class="header-nav-link" href="blog.html">Blog</a>
+      <a class="header-nav-link" href="contact.html">Contact Us</a>
+    </nav>
+
+    <div class="header-right">
+      <div class="header-search-box" style="position: relative;">
+        <input placeholder="Search" class="header-search-input" type="text">
+        <svg class="header-search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      </div>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="container hero-grid">
-      <div>
-        <div class="hero-badge">Quality healthcare you can trust</div>
-        <h1>Excellence in<br>Private Healthcare</h1>
-        <p>Quality Care Private Hospital combines world-class medical expertise with compassionate care. Our specialists are here for you and your family, every step of the way.</p>
-        <div class="btn-group">
-          <a href="contact.html" class="btn btn-primary">Book an Appointment</a>
-          <a href="services.html" class="btn btn-outline">Our Services</a>
-        </div>
-      </div>
-      <div class="hero-image">
-        <div class="hero-image-placeholder">
-          [INSERT IMAGE: Modern hospital building exterior or welcoming reception area]
+  <!-- ===== HERO ===== -->
+  <section class="home-hero-section" style="background-image: url('assets/images/hero.png');">
+    <div class="home-hero-overlay">
+      <div class="home-hero-content">
+        <h1>Where Care Meets Compassion</h1>
+        <p>At Quality Care Private Hospital, we provide affordable, high-quality healthcare in a safe, supportive environment. Our experienced team is committed to delivering personalised, reliable care, when it matters most.</p>
+        <div class="home-hero-buttons">
+          <button class="home-btn-white">Find a Doctor</button>
+          <button class="home-btn-secondary" onclick="window.location='contact.html'">Book an Appointment</button>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Stats Bar -->
-  <section class="stats-bar">
-    <div class="container stats-grid">
-      <div>
-        <div class="stat-number" data-target="25" data-suffix="+">0</div>
-        <div class="stat-label">Years of Service</div>
+  <!-- ===== SERVICE CARDS ===== -->
+  <section class="home-services-section">
+    <div class="home-service-card home-emergency">
+      <h3>Emergency Service</h3>
+      <p>We are available around the clock to provide fast, reliable, and timely medical assistance whenever you need it.</p>
+      <div class="home-call-box">
+        <span>Call Us Now</span>
+        <h4>015 516 5439</h4>
+        <span>Our Whatsapp</span>
+        <h4>063 985 5425</h4>
       </div>
-      <div>
-        <div class="stat-number" data-target="15000" data-suffix="+">0</div>
-        <div class="stat-label">Patients Yearly</div>
-      </div>
-      <div>
-        <div class="stat-number" data-target="120" data-suffix="+">0</div>
-        <div class="stat-label">Specialist Doctors</div>
-      </div>
-      <div>
-        <div class="stat-number" data-target="98" data-suffix="%">0</div>
-        <div class="stat-label">Patient Satisfaction</div>
-      </div>
+    </div>
+    <div class="home-service-card home-consultation">
+      <img alt="Doctor" class="home-service-avatar" src="assets/images/avatar.jpg" onerror="this.style.display='none'">
+      <h3>Doctor Consultation</h3>
+      <p>Receive expert medical care from our experienced doctors. We provide personalised consultations to help you understand your health and make informed treatment decisions.</p>
+      <a href="contact.html">Learn More</a>
     </div>
   </section>
 
-  <!-- Why Choose Us -->
-  <section class="section">
-    <div class="container">
-      <span class="section-tag">Why Quality Care</span>
-      <h2 class="section-title">Why Choose Us?</h2>
-      <p class="section-subtitle">We put patients first — always. Here's what sets us apart.</p>
-      <div class="cards-grid" style="margin-top: 40px;">
-        <div class="card">
-          <div class="card-icon">🏥</div>
-          <h3>Modern Facilities</h3>
-          <p>State-of-the-art operating theatres, diagnostic imaging, ICUs, and comfortable private wards with the latest medical technology.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">👨‍⚕️</div>
-          <h3>Expert Specialists</h3>
-          <p>Over 120 specialists across every major discipline — from cardiology to paediatrics, orthopaedics to oncology.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">❤️</div>
-          <h3>Compassionate Care</h3>
-          <p>Our nursing and support staff are trained to treat every patient with dignity, empathy, and professional excellence.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">⏱️</div>
-          <h3>24/7 Emergency</h3>
-          <p>Fully equipped emergency department staffed around the clock — because medical emergencies don't keep office hours.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">🩺</div>
-          <h3>Full Diagnostic Suite</h3>
-          <p>In-house lab, radiology (MRI, CT, X-ray), and cardiac diagnostics — faster results, better coordination of care.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">🤝</div>
-          <h3>Medical Aid Accepted</h3>
-          <p>We work with all major medical aid schemes in South Africa. Our admin team helps you navigate claims and coverage.</p>
-        </div>
-      </div>
+  <!-- ===== HEALING SECTION ===== -->
+  <section class="home-healing-section">
+    <div class="home-healing-content">
+      <h2>Healing Starts Here</h2>
+      <p class="home-subtext">The Right Time. The Right Care.</p>
+      <p class="home-desc">Your journey to better health begins with compassionate support and expert medical care. At Quality Care Private Hospital, we are committed to providing treatment that is timely, effective, and tailored to your individual needs. Our team prioritises comfort, clear communication, and confidence — every step of your care journey.</p>
+      <p class="home-highlight">The World's Best Hospital</p>
+      <p class="home-desc">Our care is led by experienced specialists and supported by modern facilities, advanced technology, and evidence-based practices. With a strong focus on patient safety and personalised treatment, we are a trusted healthcare partner for individuals and families seeking quality care. <span class="home-inline-btn-wrapper"><button class="home-inline-btn">Learn more about our top-ranked specialties</button></span></p>
+      <button class="home-white-btn">Why Choose Quality Care</button>
+    </div>
+    <div class="home-healing-image">
+      [INSERT IMAGE: Patient being cared for]
     </div>
   </section>
 
-  <!-- About Preview -->
-  <section class="section section-alt">
-    <div class="container about-grid">
-      <div>
-        <span class="section-tag">About Us</span>
-        <h2 class="section-title">A Legacy of Healthcare Excellence</h2>
-        <p>For over 25 years, Quality Care Private Hospital has been at the heart of our community — delivering exceptional medical care in a warm, professional environment.</p>
-        <p>Founded by a team of leading specialists, our hospital has grown from a small clinic into a full-service private hospital with over 200 beds, 12 operating theatres, and a team of more than 800 healthcare professionals.</p>
-        <div class="feature-list">
-          <div class="feature-item">
-            <div class="feature-check">✓</div>
-            <div><strong>Joint Commission Accredited</strong> — International standards of safety and quality</div>
-          </div>
-          <div class="feature-item">
-            <div class="feature-check">✓</div>
-            <div><strong>Teaching Hospital</strong> — Training the next generation of medical professionals</div>
-          </div>
-          <div class="feature-item">
-            <div class="feature-check">✓</div>
-            <div><strong>Community Focused</strong> — Outreach programmes and health awareness campaigns</div>
+  <!-- ===== GLOBAL SECTION ===== -->
+  <section class="home-global-section">
+    <div class="home-global-image">
+      [INSERT IMAGE: Doctor with patient]
+    </div>
+    <div class="home-global-content">
+      <h2>World-Class Care For Global Patients</h2>
+      <p>We deliver exceptional medical care for patients travelling from across the region and beyond. With experienced specialists, modern facilities, and personalised treatment pathways, we ensure a seamless, professional, and comfortable healthcare experience from arrival to recovery.</p>
+      <button class="btn btn-primary btn-md">International Services</button>
+    </div>
+  </section>
+
+  <!-- ===== FEATURED CARE AREAS ===== -->
+  <section class="home-featured-section">
+    <h2>Featured Care Areas</h2>
+    <p>We provide specialised care in obstetrics, gynaecology, and newborn services, supporting women and families through every stage of life. Our experienced specialists deliver compassionate, evidence-based care in a safe, modern environment focused on comfort, dignity, and excellent outcomes.</p>
+    <div class="home-care-grid">
+      <ul>
+        <li><svg class="home-care-icon" width="16" height="16" viewBox="0 0 256 512" fill="currentColor"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg> Obstetrics &amp; Maternity Care</li>
+        <li><svg class="home-care-icon" width="16" height="16" viewBox="0 0 256 512" fill="currentColor"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg> Gynecology &amp; Women's Health</li>
+        <li><svg class="home-care-icon" width="16" height="16" viewBox="0 0 256 512" fill="currentColor"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg> Fertility &amp; Reproductive Medicine</li>
+        <li><svg class="home-care-icon" width="16" height="16" viewBox="0 0 256 512" fill="currentColor"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg> Neonatal &amp; Newborn Care</li>
+      </ul>
+      <ul>
+        <li><svg class="home-care-icon" width="16" height="16" viewBox="0 0 256 512" fill="currentColor"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg> Minimal Invasive Surgery</li>
+        <li><svg class="home-care-icon" width="16" height="16" viewBox="0 0 256 512" fill="currentColor"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg> Adolescent &amp; Menopausal Care</li>
+        <li><svg class="home-care-icon" width="16" height="16" viewBox="0 0 256 512" fill="currentColor"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg> Family Planning &amp; Contraception Services</li>
+        <li><svg class="home-care-icon" width="16" height="16" viewBox="0 0 256 512" fill="currentColor"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg> Nutrition &amp; Diet Counseling</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== BLOGS & NEWS ===== -->
+  <section class="home-blogs-section">
+    <div class="home-blogs-header">
+      <h2>Blogs &amp; News</h2>
+      <p>Let's See Our Latest News &amp; Blogs</p>
+    </div>
+    <div class="home-blogs-container">
+      <div class="home-main-blog">
+        <img alt="Main Blog" src="assets/images/blog1.jpg" onerror="this.style.display='none'">
+        <h3>Your Guide to Better Health</h3>
+        <p>Explore in-depth stories, expert opinions, and valuable medical guidance. Our main blog brings you well-researched information to help you stay informed, make better health choices, and understand the latest trends in modern healthcare.</p>
+      </div>
+      <div class="home-side-blogs">
+        <div class="home-side-blog">
+          <img alt="Blog" src="assets/images/blog2.jpg" onerror="this.style.display='none'">
+          <div class="home-side-blog-text">
+            <h4>Understanding the Basics of Modern Care</h4>
+            <p>Get clear and simple insights into common treatments, medical terms, and everyday health concerns.</p>
+            <button class="home-read-more-btn">Read More</button>
           </div>
         </div>
-        <a href="about.html" class="btn btn-accent" style="margin-top: 12px;">Learn Our Story</a>
+        <div class="home-side-blog">
+          <img alt="Blog" src="assets/images/blog3.jpg" onerror="this.style.display='none'">
+          <div class="home-side-blog-text">
+            <h4>Expert Tips for Everyday Wellness</h4>
+            <p>Discover practical habits and lifestyle advice to help you stay active, healthy, and energized.</p>
+            <button class="home-read-more-btn">Read More</button>
+          </div>
+        </div>
+        <div class="home-side-blog">
+          <img alt="Blog" src="assets/images/blog4.jpg" onerror="this.style.display='none'">
+          <div class="home-side-blog-text">
+            <h4>Advancements in Medical Technology</h4>
+            <p>Learn how innovative tools and new procedures are transforming patient care worldwide.</p>
+            <button class="home-read-more-btn">Read More</button>
+          </div>
+        </div>
+        <div class="home-side-blog">
+          <img alt="Blog" src="assets/images/blog5.jpg" onerror="this.style.display='none'">
+          <div class="home-side-blog-text">
+            <h4>Your Health Questions Answered</h4>
+            <p>We break down frequently asked health questions with easy explanations from medical professionals.</p>
+            <button class="home-read-more-btn">Read More</button>
+          </div>
+        </div>
       </div>
-      <div class="about-image">
-        [INSERT IMAGE: Hospital interior — reception, corridor, or team of doctors]
-      </div>
+    </div>
+    <div class="home-blog-share">
+      <button class="home-share-btn">Share</button>
     </div>
   </section>
 
-  <!-- Services Preview -->
-  <section class="section">
-    <div class="container">
-      <span class="section-tag">Our Services</span>
-      <h2 class="section-title">Comprehensive Medical Services</h2>
-      <p class="section-subtitle">From routine check-ups to complex surgery — we cover every aspect of your health.</p>
-      <div class="service-detail-grid" style="margin-top: 40px;">
-        <div class="service-card">
-          <div class="service-icon">🫀</div>
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="home-contact-section">
+    <div class="home-contact-left">
+      <h2>Get in Touch</h2>
+      <p>Our maternity care team is always available to guide, support, and assist you with any questions or concerns.</p>
+      <div class="home-contact-info">
+        <div class="home-contact-item">
+          <div class="home-contact-icon">
+            <svg width="18" height="18" viewBox="0 0 512 512" fill="currentColor"><path d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"/></svg>
+          </div>
           <div>
-            <h4>Cardiology</h4>
-            <p>Heart assessments, ECG, stress testing, echocardiography, and cardiac catheterisation.</p>
+            <h4>Helpline</h4>
+            <p>015 516 5439</p>
           </div>
         </div>
-        <div class="service-card">
-          <div class="service-icon">🦴</div>
+        <div class="home-contact-item">
+          <div class="home-contact-icon">
+            <svg width="18" height="18" viewBox="0 0 512 512" fill="currentColor"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/></svg>
+          </div>
           <div>
-            <h4>Orthopaedics</h4>
-            <p>Joint replacement, sports injuries, fracture care, and spinal surgery.</p>
+            <h4>Email</h4>
+            <p>admin@qualitycarehospital.co.za</p>
           </div>
         </div>
-        <div class="service-card">
-          <div class="service-icon">🤰</div>
+        <div class="home-contact-item">
+          <div class="home-contact-icon">
+            <svg width="18" height="18" viewBox="0 0 384 512" fill="currentColor"><path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"/></svg>
+          </div>
           <div>
-            <h4>Maternity &amp; Paediatrics</h4>
-            <p>Antenatal care, delivery suites, neonatal ICU, and child health services.</p>
+            <h4>Address</h4>
+            <p>83 Grobler Street, Louis Trichardt, Limpopo, 0920</p>
           </div>
         </div>
-        <div class="service-card">
-          <div class="service-icon">🔬</div>
+        <div class="home-contact-item">
+          <div class="home-contact-icon">
+            <svg width="18" height="18" viewBox="0 0 512 512" fill="currentColor"><path d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z"/></svg>
+          </div>
           <div>
-            <h4>Diagnostic Imaging</h4>
-            <p>MRI, CT scan, X-ray, ultrasound, and mammography with same-day reporting.</p>
-          </div>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">⚕️</div>
-          <div>
-            <h4>General Surgery</h4>
-            <p>Laparoscopic, gastrointestinal, vascular, and robotic-assisted surgical procedures.</p>
-          </div>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">🏃</div>
-          <div>
-            <h4>Physiotherapy &amp; Rehab</h4>
-            <p>Post-surgery rehabilitation, sports therapy, pain management, and mobility programmes.</p>
-          </div>
-        </div>
-      </div>
-      <div style="text-align: center; margin-top: 32px;">
-        <a href="services.html" class="btn btn-accent">View All Services</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonials -->
-  <section class="section section-alt">
-    <div class="container">
-      <span class="section-tag">Patient Stories</span>
-      <h2 class="section-title">What Our Patients Say</h2>
-      <div class="cards-grid" style="margin-top: 40px;">
-        <div class="testimonial-card">
-          <div class="testimonial-text">"The care I received at Quality Care was outstanding. From the moment I walked in, every staff member treated me with respect and kindness. The surgeons were world-class."</div>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">TM</div>
-            <div>
-              <div class="testimonial-name">Thabo Mokoena</div>
-              <div class="testimonial-role">Knee Replacement Patient</div>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial-card">
-          <div class="testimonial-text">"I delivered my baby girl at Quality Care and cannot speak highly enough of the maternity team. The facilities are beautiful and the nurses made me feel completely safe."</div>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">LN</div>
-            <div>
-              <div class="testimonial-name">Lebogang Ndlovu</div>
-              <div class="testimonial-role">New Mother</div>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial-card">
-          <div class="testimonial-text">"After my heart procedure, the cardiac rehab team helped me get back to full health. I'm back on the golf course thanks to them. Truly life-changing care."</div>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">JD</div>
-            <div>
-              <div class="testimonial-name">John du Plessis</div>
-              <div class="testimonial-role">Cardiac Patient</div>
-            </div>
+            <h4>Visiting Hours</h4>
+            <p>10:00 - 11:00, 14:30 - 16:00, 19:00 - 20:00</p>
           </div>
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- CTA -->
-  <section class="cta-section section-dark">
-    <div class="container">
-      <h2>Ready to Experience Quality Care?</h2>
-      <p>Book an appointment, visit our facilities, or speak with our team. We're here for you.</p>
-      <div class="btn-group" style="justify-content: center;">
-        <a href="contact.html" class="btn btn-primary">Book an Appointment</a>
-        <a href="tel:+27123456789" class="btn btn-outline">Call Us Now</a>
-      </div>
+    <div class="home-contact-right" style="background-image: url('assets/images/contact.jpg');">
+      <form class="home-contact-form" name="contact-home" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <p style="display: none;"><label>Bot check: <input name="bot-field"></label></p>
+        <input type="hidden" name="form-name" value="contact-home">
+        <div class="home-contact-form-row">
+          <input placeholder="Full Name" type="text" name="name" required>
+          <input placeholder="Email/Phone" type="email" name="email" required>
+        </div>
+        <select name="department">
+          <option>Select Department</option>
+          <option>Gynecology</option>
+          <option>Pediatrics</option>
+          <option>General Medicine</option>
+        </select>
+        <textarea placeholder="Message / Reason" name="message"></textarea>
+        <button type="submit" class="home-send-btn">Send Message</button>
+      </form>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="index.html" class="logo">
-            <div class="logo-icon">Q</div>
-            Quality<span>Care</span>
+  <!-- ===== FOLLOW / SOCIAL ===== -->
+  <section class="home-final-section">
+    <div class="home-follow-card">
+      <div class="home-follow-left">
+        <h4>Follow Quality Care</h4>
+        <div class="home-social-icons">
+          <a href="#" class="home-social-link" aria-label="YouTube">
+            <svg width="18" height="18" viewBox="0 0 576 512" fill="currentColor"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
           </a>
-          <p>Excellence in private healthcare. Serving our community with compassion, skill, and integrity for over 25 years.</p>
-        </div>
-        <div>
-          <h4>Quick Links</h4>
-          <a href="index.html">Home</a>
-          <a href="about.html">About Us</a>
-          <a href="services.html">Our Services</a>
-          <a href="careers.html">Careers</a>
-          <a href="contact.html">Contact</a>
-        </div>
-        <div>
-          <h4>Services</h4>
-          <a href="services.html">Cardiology</a>
-          <a href="services.html">Orthopaedics</a>
-          <a href="services.html">Maternity</a>
-          <a href="services.html">Diagnostics</a>
-          <a href="services.html">Emergency</a>
-        </div>
-        <div>
-          <h4>Contact</h4>
-          <a href="#">123 Hospital Road, Durban</a>
-          <a href="tel:+27123456789">+27 12 345 6789</a>
-          <a href="mailto:info@qualitycarehospital.co.za">info@qualitycarehospital.co.za</a>
-          <a href="contact.html">Get Directions</a>
+          <a href="#" class="home-social-link" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 320 512" fill="currentColor"><path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></svg>
+          </a>
+          <a href="#" class="home-social-link" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 448 512" fill="currentColor"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
+          </a>
+          <a href="#" class="home-social-link" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 448 512" fill="currentColor"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+          </a>
         </div>
       </div>
-      <div class="footer-bottom">
-        <span>&copy; <span id="year">2026</span> Quality Care Private Hospital. All rights reserved.</span>
-        <span>Site by <a href="https://pawatech.co.za">PawaTech</a></span>
+    </div>
+  </section>
+
+  <!-- ===== MAP ===== -->
+  <section class="home-map-section">
+    <div>
+      [INSERT MAP: Leaflet map — 83 Grobler Street, Louis Trichardt]
+    </div>
+  </section>
+
+  <!-- ===== ALPHABET NAVIGATION ===== -->
+  <section class="home-alphabet-section">
+    <div class="home-alphabet-left">
+      <h4>Find Pages by First Letter</h4>
+      <div class="home-alphabet-grid" id="alphabetGrid">
+      </div>
+    </div>
+    <div class="home-alphabet-search">
+      <label>Search the Site</label>
+      <div class="home-search-box">
+        <input placeholder="Search here..." type="text">
+        <button class="home-search-btn" title="Search">
+          <svg width="16" height="16" viewBox="0 0 512 512" fill="currentColor"><path d="M456.69 421.39 362.6 327.3a173.81 173.81 0 0 0 34.84-104.58C397.44 126.38 319.06 48 222.72 48S48 126.38 48 222.72s78.38 174.72 174.72 174.72A173.81 173.81 0 0 0 327.3 362.6l94.09 94.09a25 25 0 0 0 35.3-35.3zM97.92 222.72a124.8 124.8 0 1 1 124.8 124.8 124.95 124.95 0 0 1-124.8-124.8z"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer-main">
+    <div class="footer-main-container">
+      <div class="footer-left">
+        <img alt="Logo" class="footer-logo" src="assets/images/logo.jpg" onerror="this.style.display='none'">
+        <h3>About Us</h3>
+        <p>Quality Care Hospital is committed to providing exceptional healthcare services with compassion and expertise.</p>
+        <a class="footer-btn" href="#">
+          Find a Doctor
+          <svg class="footer-btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+        </a>
+        <a class="footer-btn" href="careers.html">
+          Explore Careers
+          <svg class="footer-btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+        </a>
+        <a class="footer-btn" href="blog.html">
+          Sign Up for free E-Newsletters
+          <svg class="footer-btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+        </a>
+      </div>
+
+      <div class="footer-center">
+        <div class="footer-group">
+          <h4>Wards &gt;</h4>
+          <ul>
+            <li><a href="services.html">General Ward</a></li>
+            <li><a href="services.html">Private Room</a></li>
+            <li><a href="services.html">Maternity &amp; Gynae Ward</a></li>
+            <li><a href="services.html">Postnatal Care</a></li>
+            <li><a href="services.html">Neonatal ICU</a></li>
+            <li><a href="services.html">Pre-Baby Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-group">
+          <h4>Our Services &gt;</h4>
+          <ul>
+            <li><a href="services.html">Antenatal Care</a></li>
+            <li><a href="services.html">Maternity &amp; Day Services</a></li>
+            <li><a href="services.html">Ultrasound</a></li>
+            <li><a href="services.html">Menopause Care</a></li>
+          </ul>
+        </div>
+        <div class="footer-group">
+          <h4>Patient Amenities &gt;</h4>
+          <ul>
+            <li>Waiting Area</li>
+            <li>Parking Area</li>
+            <li>Directions</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <div class="footer-group">
+          <h4>Contact Us</h4>
+          <p class="footer-contact-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+            83 Grobler Street, Louis Trichardt, Limpopo, 0920
+          </p>
+          <p class="footer-contact-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            015 516 5439
+          </p>
+          <p class="footer-contact-item">
+            <svg width="16" height="16" viewBox="0 0 448 512" fill="currentColor"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8s-14.3 18-17.6 21.8-6.5 4.2-12 1.4c-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7s-12.5-30.1-17.1-41.2c-4.5-10.8-9.1-9.3-12.5-9.5s-6.9-.2-10.6-.2-9.7 1.4-14.8 6.9-19.4 19-19.4 46.3 19.9 53.7 22.6 57.4c2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4s-5-3.9-10.5-6.6z"/></svg>
+            063 985 5425
+          </p>
+          <p class="footer-contact-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+            admin@qualitycarehospital.co.za
+          </p>
+        </div>
+        <div class="footer-group">
+          <h4>Pharmacy &gt;</h4>
+          <ul>
+            <li>In-Patient Prescriptions</li>
+            <li>Out-Patient Pharmacy</li>
+            <li>Medication Counseling</li>
+          </ul>
+        </div>
+        <div class="footer-group">
+          <h4>Laboratory &gt;</h4>
+          <ul>
+            <li>Lancet Laboratories are on site, providing precise diagnostics, trusted results, and dependable service to support timely clinical decisions.</li>
+            <li class="footer-link"><a href="https://www.lancet.co.za/" target="_blank" rel="noopener noreferrer">Visit Lancet Website (www.lancet.co.za)</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <hr class="footer-divider">
+
+    <div class="footer-links">
+      <a href="#">Terms &amp; Conditions</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Notice of Privacy Practices</a>
+      <a href="#">Notice of Nondiscrimination</a>
+      <a href="#">Digital Accessibility Statement</a>
+      <a href="#">Advertising &amp; Sponsorship Policy</a>
+    </div>
+
+    <div class="footer-bottom">
+      <p>We are dedicated to maintaining transparency, privacy, and accessibility in all our services.</p>
+      <div class="footer-bottom-right">
+        <div class="footer-language-select">
+          <p>Language:</p>
+          <select class="footer-language-dropdown">
+            <option>English</option>
+          </select>
+        </div>
+        <button class="footer-feedback-btn" onclick="window.location='contact.html'">Feedback</button>
       </div>
     </div>
   </footer>

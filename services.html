@@ -3,171 +3,137 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Services — Quality Care Private Hospital</title>
-  <meta name="description" content="Comprehensive medical services at Quality Care Private Hospital — cardiology, orthopaedics, maternity, diagnostics, surgery, emergency, and more.">
+  <title>Our Services — Quality Care Hospital</title>
+  <meta name="description" content="Comprehensive medical services at Quality Care Private Hospital.">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
   <!-- Header -->
-  <header class="header">
-    <div class="header-inner">
-      <a href="index.html" class="logo">
-        <div class="logo-icon">Q</div>
-        Quality<span>Care</span>
-      </a>
-      <nav class="nav" role="navigation" aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html" class="active">Services</a>
-        <a href="careers.html">Careers</a>
-        <a href="contact.html" class="nav-cta">Contact</a>
-      </nav>
-      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+  <header class="header-wrapper">
+    <div class="header-left">
+      <a href="index.html"><img class="header-logo" src="assets/images/logo.jpg" alt="Quality Care Hospital Logo" onerror="this.style.display='none'"></a>
+    </div>
+    <div class="header-hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    <nav class="header-nav" id="headerNav">
+      <div class="header-dropdown">
+        <span class="header-nav-link">Wards ▾</span>
+        <div class="header-dropdown-menu">
+          <a class="header-dropdown-item" href="#">General Ward</a>
+          <a class="header-dropdown-item" href="#">Private Room</a>
+          <a class="header-dropdown-item" href="#">Maternity &amp; Gynae Ward</a>
+          <a class="header-dropdown-item" href="#">Postnatal Care</a>
+          <a class="header-dropdown-item" href="#">Neonatal ICU</a>
+          <a class="header-dropdown-item" href="#">Pre-Baby Support</a>
+        </div>
+      </div>
+      <a class="header-nav-link" href="services.html">Our Services</a>
+      <a class="header-nav-link" href="about.html">About Us</a>
+      <a class="header-nav-link" href="blog.html">Blog</a>
+      <a class="header-nav-link" href="contact.html">Contact Us</a>
+    </nav>
+    <div class="header-right">
+      <div class="header-search-box" style="position: relative;">
+        <input placeholder="Search" class="header-search-input" type="text">
+        <svg class="header-search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      </div>
     </div>
   </header>
 
   <!-- Page Hero -->
   <section class="page-hero">
-    <div class="container">
-      <div class="breadcrumb">
-        <a href="index.html">Home</a> / <span>Our Services</span>
-      </div>
-      <h1>Our Medical Services</h1>
-      <p>Comprehensive healthcare across every major discipline — with the expertise and technology you deserve.</p>
-    </div>
+    <div class="breadcrumb"><a href="index.html">Home</a> / <span>Our Services</span></div>
+    <h1>Our Medical Services</h1>
+    <p>Comprehensive healthcare across every major discipline — with the expertise and technology you deserve.</p>
   </section>
 
-  <!-- Full Services Grid -->
-  <section class="section">
+  <!-- Services Grid -->
+  <section class="section section-white">
     <div class="container">
-      <div class="service-detail-grid" style="margin-top: 0;">
+      <div class="service-detail-grid">
         <div class="service-card">
           <div class="service-icon">🫀</div>
           <div>
-            <h4>Cardiology &amp; Cardiac Surgery</h4>
-            <p>Full cardiac diagnostics including ECG, echocardiography, stress testing, holter monitoring, cardiac catheterisation, angioplasty, and bypass surgery.</p>
+            <h4>Cardiology</h4>
+            <p>Full cardiac diagnostics including ECG, echocardiography, stress testing, and cardiac catheterisation.</p>
           </div>
         </div>
         <div class="service-card">
           <div class="service-icon">🦴</div>
           <div>
-            <h4>Orthopaedics &amp; Trauma</h4>
-            <p>Joint replacement (hip, knee, shoulder), arthroscopy, fracture repair, spinal surgery, sports medicine, and post-operative rehabilitation.</p>
+            <h4>Orthopaedics</h4>
+            <p>Joint replacement, arthroscopy, fracture repair, spinal surgery, and sports medicine.</p>
           </div>
         </div>
         <div class="service-card">
           <div class="service-icon">🤰</div>
           <div>
             <h4>Maternity &amp; Women's Health</h4>
-            <p>Antenatal and postnatal care, modern delivery suites, neonatal ICU (NICU), gynaecological surgery, and well-woman check-ups.</p>
+            <p>Antenatal and postnatal care, modern delivery suites, NICU, and gynaecological surgery.</p>
           </div>
         </div>
         <div class="service-card">
           <div class="service-icon">👶</div>
           <div>
             <h4>Paediatrics</h4>
-            <p>Child health services from birth through adolescence — including developmental assessments, immunisations, and paediatric specialty care.</p>
+            <p>Child health services from birth through adolescence — immunisations, assessments, and specialty care.</p>
           </div>
         </div>
         <div class="service-card">
           <div class="service-icon">🔬</div>
           <div>
-            <h4>Diagnostic Imaging &amp; Radiology</h4>
-            <p>MRI (1.5T and 3T), CT scan, digital X-ray, ultrasound, mammography, bone densitometry, and fluoroscopy — all with same-day reporting.</p>
+            <h4>Diagnostic Imaging</h4>
+            <p>MRI, CT scan, digital X-ray, ultrasound, mammography — all with same-day reporting.</p>
           </div>
         </div>
         <div class="service-card">
           <div class="service-icon">🧪</div>
           <div>
             <h4>Pathology &amp; Laboratory</h4>
-            <p>Full on-site laboratory services including haematology, clinical chemistry, microbiology, histology, and blood banking.</p>
+            <p>On-site lab services including haematology, clinical chemistry, microbiology, and blood banking.</p>
           </div>
         </div>
         <div class="service-card">
           <div class="service-icon">⚕️</div>
           <div>
-            <h4>General &amp; Specialist Surgery</h4>
-            <p>Laparoscopic (keyhole), gastrointestinal, colorectal, vascular, breast, endocrine, and robotic-assisted surgery across 12 state-of-the-art theatres.</p>
+            <h4>General Surgery</h4>
+            <p>Laparoscopic, gastrointestinal, vascular, and robotic-assisted surgical procedures.</p>
           </div>
         </div>
         <div class="service-card">
           <div class="service-icon">🚑</div>
           <div>
-            <h4>Emergency &amp; Trauma Centre</h4>
-            <p>24/7 emergency department with dedicated trauma bays, resuscitation rooms, on-call specialists, and direct ambulance access.</p>
+            <h4>Emergency &amp; Trauma</h4>
+            <p>24/7 emergency department with trauma bays, resuscitation, and on-call specialists.</p>
           </div>
         </div>
         <div class="service-card">
           <div class="service-icon">🫁</div>
           <div>
-            <h4>Respiratory &amp; Pulmonology</h4>
-            <p>Pulmonary function testing, bronchoscopy, sleep studies, asthma and COPD management, and respiratory therapy.</p>
+            <h4>Pulmonology</h4>
+            <p>Pulmonary function testing, bronchoscopy, sleep studies, and respiratory therapy.</p>
           </div>
         </div>
         <div class="service-card">
           <div class="service-icon">🧠</div>
           <div>
-            <h4>Neurology &amp; Neurosurgery</h4>
-            <p>Neurological assessments, EEG, nerve conduction studies, stroke management, and neurosurgical procedures including spinal and cranial surgery.</p>
+            <h4>Neurology</h4>
+            <p>Neurological assessments, EEG, stroke management, and neurosurgical procedures.</p>
           </div>
         </div>
         <div class="service-card">
           <div class="service-icon">🏃</div>
           <div>
-            <h4>Physiotherapy &amp; Rehabilitation</h4>
-            <p>Post-surgical rehab, sports physiotherapy, occupational therapy, speech therapy, and custom exercise programmes.</p>
+            <h4>Physiotherapy &amp; Rehab</h4>
+            <p>Post-surgical rehab, sports physiotherapy, occupational therapy, and custom exercise programmes.</p>
           </div>
         </div>
         <div class="service-card">
           <div class="service-icon">🧠</div>
           <div>
-            <h4>Mental Health &amp; Psychiatry</h4>
-            <p>Inpatient and outpatient psychiatric care, counselling, substance abuse programmes, and child/adolescent mental health services.</p>
+            <h4>Mental Health</h4>
+            <p>Inpatient and outpatient psychiatric care, counselling, and substance abuse programmes.</p>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Specialised Centres -->
-  <section class="section section-alt">
-    <div class="container">
-      <span class="section-tag">Specialised Centres</span>
-      <h2 class="section-title">Centres of Excellence</h2>
-      <p class="section-subtitle">Dedicated units within our hospital offering world-class specialised care.</p>
-      <div class="cards-grid" style="margin-top: 40px;">
-        <div class="card">
-          <div class="card-icon">🫀</div>
-          <h3>Cardiac Centre</h3>
-          <p>Comprehensive heart care from diagnosis through surgery and rehab — including a 12-bed cardiac ICU and 24-hour interventional cardiology.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">🤱</div>
-          <h3>Mother &amp; Child Centre</h3>
-          <p>Modern maternity suites, level 3 NICU, breastfeeding support, and paediatric specialty care all in one dedicated wing.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">🦴</div>
-          <h3>Orthopaedic &amp; Sports Centre</h3>
-          <p>Joint replacement, arthroscopy, sports injury management, and rehabilitation — with dedicated physiotherapy and hydrotherapy.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">🔬</div>
-          <h3>Oncology Unit</h3>
-          <p>Medical and radiation oncology, chemotherapy suite, palliative care, and a dedicated support team for cancer patients and their families.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">🩺</div>
-          <h3>Day Clinic &amp; Minor Procedures</h3>
-          <p>Same-day procedures, endoscopy, cataract surgery, and minor surgical procedures with rapid turnaround and comfortable recovery areas.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">🏥</div>
-          <h3>Intensive Care Units</h3>
-          <p>24-bed ICU (medical, surgical, cardiac) and 16-bed high-care unit — fully equipped with advanced monitoring and ventilation.</p>
         </div>
       </div>
     </div>
@@ -177,54 +143,39 @@
   <section class="cta-section section-dark">
     <div class="container">
       <h2>Need a Specialist?</h2>
-      <p>Our team of over 120 specialists is ready to help. Contact us to book a consultation.</p>
-      <div class="btn-group" style="justify-content: center;">
-        <a href="contact.html" class="btn btn-primary">Book a Consultation</a>
-        <a href="tel:+271****6789" class="btn btn-outline">Call Our Enquiries Desk</a>
+      <p>Our team of experienced specialists is ready to help. Contact us to book a consultation.</p>
+      <div class="btn-group" style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+        <a href="contact.html" class="btn-white">Book a Consultation</a>
+        <a href="tel:+2715165439" class="btn-outline">Call Our Enquiries Desk</a>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="index.html" class="logo">
-            <div class="logo-icon">Q</div>
-            Quality<span>Care</span>
-          </a>
-          <p>Excellence in private healthcare. Serving our community with compassion, skill, and integrity for over 25 years.</p>
-        </div>
-        <div>
-          <h4>Quick Links</h4>
-          <a href="index.html">Home</a>
-          <a href="about.html">About Us</a>
-          <a href="services.html">Our Services</a>
-          <a href="careers.html">Careers</a>
-          <a href="contact.html">Contact</a>
-        </div>
-        <div>
-          <h4>Services</h4>
-          <a href="services.html">Cardiology</a>
-          <a href="services.html">Orthopaedics</a>
-          <a href="services.html">Maternity</a>
-          <a href="services.html">Diagnostics</a>
-          <a href="services.html">Emergency</a>
-        </div>
-        <div>
-          <h4>Contact</h4>
-          <a href="#">123 Hospital Road, Durban</a>
-          <a href="tel:+271****6789">+27 12 345 6789</a>
-          <a href="mailto:info@qualitycarehospital.co.za">info@qualitycarehospital.co.za</a>
-          <a href="contact.html">Get Directions</a>
-        </div>
+  <footer class="footer-main">
+    <div class="footer-main-container">
+      <div class="footer-left">
+        <img alt="Logo" class="footer-logo" src="assets/images/logo.jpg" onerror="this.style.display='none'">
+        <h3>About Us</h3>
+        <p>Quality Care Hospital is committed to providing exceptional healthcare services with compassion and expertise.</p>
+        <a class="footer-btn" href="#">Find a Doctor<svg class="footer-btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg></a>
+        <a class="footer-btn" href="careers.html">Explore Careers<svg class="footer-btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg></a>
+        <a class="footer-btn" href="blog.html">Sign Up for free E-Newsletters<svg class="footer-btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg></a>
       </div>
-      <div class="footer-bottom">
-        <span>&copy; <span id="year">2026</span> Quality Care Private Hospital. All rights reserved.</span>
-        <span>Site by <a href="https://pawatech.co.za">PawaTech</a></span>
+      <div class="footer-center">
+        <div class="footer-group"><h4>Wards &gt;</h4><ul><li><a href="#">General Ward</a></li><li><a href="#">Private Room</a></li><li><a href="#">Maternity &amp; Gynae Ward</a></li><li><a href="#">Postnatal Care</a></li><li><a href="#">Neonatal ICU</a></li><li><a href="#">Pre-Baby Support</a></li></ul></div>
+        <div class="footer-group"><h4>Our Services &gt;</h4><ul><li><a href="#">Antenatal Care</a></li><li><a href="#">Maternity &amp; Day Services</a></li><li><a href="#">Ultrasound</a></li><li><a href="#">Menopause Care</a></li></ul></div>
+        <div class="footer-group"><h4>Patient Amenities &gt;</h4><ul><li>Waiting Area</li><li>Parking Area</li><li>Directions</li></ul></div>
+      </div>
+      <div class="footer-right">
+        <div class="footer-group"><h4>Contact Us</h4><p class="footer-contact-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>83 Grobler Street, Louis Trichardt</p><p class="footer-contact-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>015 516 5439</p><p class="footer-contact-item"><svg width="16" height="16" viewBox="0 0 448 512" fill="currentColor"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157z"/></svg>063 985 5425</p><p class="footer-contact-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>admin@qualitycarehospital.co.za</p></div>
+        <div class="footer-group"><h4>Pharmacy &gt;</h4><ul><li>In-Patient Prescriptions</li><li>Out-Patient Pharmacy</li><li>Medication Counseling</li></ul></div>
+        <div class="footer-group"><h4>Laboratory &gt;</h4><ul><li>Lancet Laboratories are on site.</li><li class="footer-link"><a href="https://www.lancet.co.za/" target="_blank">Visit Lancet Website</a></li></ul></div>
       </div>
     </div>
+    <hr class="footer-divider">
+    <div class="footer-links"><a href="#">Terms &amp; Conditions</a><a href="#">Privacy Policy</a><a href="#">Notice of Privacy Practices</a><a href="#">Notice of Nondiscrimination</a><a href="#">Digital Accessibility Statement</a><a href="#">Advertising &amp; Sponsorship Policy</a></div>
+    <div class="footer-bottom"><p>We are dedicated to maintaining transparency, privacy, and accessibility in all our services.</p><div class="footer-bottom-right"><div class="footer-language-select"><p>Language:</p><select class="footer-language-dropdown"><option>English</option></select></div><button class="footer-feedback-btn" onclick="window.location='contact.html'">Feedback</button></div></div>
   </footer>
 
   <script src="assets/js/main.js"></script>

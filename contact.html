@@ -3,166 +3,115 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us — Quality Care Private Hospital</title>
-  <meta name="description" content="Get in touch with Quality Care Private Hospital. Book an appointment, find our location, or contact our team.">
+  <title>Contact Us — Quality Care Hospital</title>
+  <meta name="description" content="Get in touch with Quality Care Private Hospital. Book an appointment or contact our team.">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
   <!-- Header -->
-  <header class="header">
-    <div class="header-inner">
-      <a href="index.html" class="logo">
-        <div class="logo-icon">Q</div>
-        Quality<span>Care</span>
-      </a>
-      <nav class="nav" role="navigation" aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="careers.html">Careers</a>
-        <a href="contact.html" class="active nav-cta">Contact</a>
-      </nav>
-      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+  <header class="header-wrapper">
+    <div class="header-left">
+      <a href="index.html"><img class="header-logo" src="assets/images/logo.jpg" alt="Quality Care Hospital Logo" onerror="this.style.display='none'"></a>
+    </div>
+    <div class="header-hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    <nav class="header-nav" id="headerNav">
+      <div class="header-dropdown">
+        <span class="header-nav-link">Wards ▾</span>
+        <div class="header-dropdown-menu">
+          <a class="header-dropdown-item" href="services.html">General Ward</a>
+          <a class="header-dropdown-item" href="services.html">Private Room</a>
+          <a class="header-dropdown-item" href="services.html">Maternity &amp; Gynae Ward</a>
+          <a class="header-dropdown-item" href="services.html">Postnatal Care</a>
+          <a class="header-dropdown-item" href="services.html">Neonatal ICU</a>
+          <a class="header-dropdown-item" href="services.html">Pre-Baby Support</a>
+        </div>
+      </div>
+      <a class="header-nav-link" href="services.html">Our Services</a>
+      <a class="header-nav-link" href="about.html">About Us</a>
+      <a class="header-nav-link" href="blog.html">Blog</a>
+      <a class="header-nav-link" href="contact.html">Contact Us</a>
+    </nav>
+    <div class="header-right">
+      <div class="header-search-box" style="position: relative;">
+        <input placeholder="Search" class="header-search-input" type="text">
+        <svg class="header-search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      </div>
     </div>
   </header>
 
   <!-- Page Hero -->
   <section class="page-hero">
-    <div class="container">
-      <div class="breadcrumb">
-        <a href="index.html">Home</a> / <span>Contact Us</span>
+    <div class="breadcrumb"><a href="index.html">Home</a> / <span>Contact Us</span></div>
+    <h1>Contact Us</h1>
+    <p>Book an appointment, ask a question, or give us a call. We're here to help.</p>
+  </section>
+
+  <!-- Contact -->
+  <section class="section section-white">
+    <div class="container" style="max-width: 900px;">
+      <div style="display: flex; flex-wrap: wrap; gap: 40px;">
+        <div style="flex: 1 1 350px;">
+          <h2>Send Us a Message</h2>
+          <p style="color: var(--c-gray); margin-bottom: 24px;">Fill in the form below and our team will get back to you within 24 hours.</p>
+
+          <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <p style="display: none;"><label>Don't fill: <input name="bot-field"></label></p>
+            <input type="hidden" name="form-name" value="contact">
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName" required>
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" name="lastName" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+              <label for="enquiryType">Enquiry Type *</label>
+              <select id="enquiryType" name="enquiryType" required>
+                <option value="">Select an option</option>
+                <option value="appointment">Book an Appointment</option>
+                <option value="enquiry">General Enquiry</option>
+                <option value="billing">Billing / Medical Aid</option>
+                <option value="feedback">Feedback / Complaint</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" required placeholder="Tell us how we can help..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-md">Send Message</button>
+          </form>
+        </div>
+
+        <div style="flex: 1 1 300px;">
+          <h2>Our Details</h2>
+          <div style="margin-top: 24px;">
+            <div class="home-contact-item"><div class="home-contact-icon"><svg width="18" height="18" viewBox="0 0 384 512" fill="currentColor"><path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"/></svg></div><div><h4>Address</h4><p>83 Grobler Street, Louis Trichardt, Limpopo, 0920</p></div></div>
+            <div class="home-contact-item"><div class="home-contact-icon"><svg width="18" height="18" viewBox="0 0 512 512" fill="currentColor"><path d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"/></svg></div><div><h4>Phone</h4><p>015 516 5439<br>Emergency: 015 516 5440</p></div></div>
+            <div class="home-contact-item"><div class="home-contact-icon"><svg width="18" height="18" viewBox="0 0 512 512" fill="currentColor"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/></svg></div><div><h4>Email</h4><p>admin@qualitycarehospital.co.za</p></div></div>
+            <div class="home-contact-item"><div class="home-contact-icon"><svg width="18" height="18" viewBox="0 0 512 512" fill="currentColor"><path d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z"/></svg></div><div><h4>Visiting Hours</h4><p>10:00 - 11:00, 14:30 - 16:00, 19:00 - 20:00</p></div></div>
+          </div>
+        </div>
       </div>
-      <h1>Contact Us</h1>
-      <p>Book an appointment, ask a question, or give us a call. We're here to help.</p>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section class="section">
-    <div class="container contact-grid">
-      <!-- Form -->
-      <div>
-        <span class="section-tag">Get in Touch</span>
-        <h2 class="section-title">Send Us a Message</h2>
-        <p>Fill in the form below and our team will get back to you within 24 hours.</p>
-
-        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" style="margin-top: 24px;">
-          <!-- Honeypot (invisible to users) -->
-          <p style="display: none;">
-            <label>Don't fill this out: <input name="bot-field"></label>
-          </p>
-
-          <input type="hidden" name="form-name" value="contact">
-
-          <div class="form-row">
-            <div class="form-group">
-              <label for="firstName">First Name *</label>
-              <input type="text" id="firstName" name="firstName" required>
-            </div>
-            <div class="form-group">
-              <label for="lastName">Last Name *</label>
-              <input type="text" id="lastName" name="lastName" required>
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label for="email">Email Address *</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-
-          <div class="form-group">
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone">
-          </div>
-
-          <div class="form-group">
-            <label for="enquiryType">Enquiry Type *</label>
-            <select id="enquiryType" name="enquiryType" required>
-              <option value="">Select an option</option>
-              <option value="appointment">Book an Appointment</option>
-              <option value="enquiry">General Enquiry</option>
-              <option value="billing">Billing / Medical Aid</option>
-              <option value="records">Medical Records Request</option>
-              <option value="compliment">Compliment</option>
-              <option value="complaint">Complaint / Feedback</option>
-              <option value="careers">Careers Enquiry</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="message">Message *</label>
-            <textarea id="message" name="message" required placeholder="Tell us how we can help..."></textarea>
-          </div>
-
-          <button type="submit" class="btn btn-accent">Send Message</button>
-        </form>
-
-        <!-- Success message (shown after form submit) -->
-        <div class="form-success" id="formSuccess">
-          Thank you. Your message has been sent successfully. We'll be in touch within 24 hours.
-        </div>
-      </div>
-
-      <!-- Contact Information -->
-      <div class="contact-info">
-        <span class="section-tag">Visit Us</span>
-        <h2 class="section-title">Our Details</h2>
-
-        <div class="contact-detail" style="margin-top: 24px;">
-          <div class="contact-icon">📍</div>
-          <div>
-            <h4>Address</h4>
-            <p>123 Hospital Road<br>Berea, Durban<br>4001, KwaZulu-Natal</p>
-          </div>
-        </div>
-
-        <div class="contact-detail">
-          <div class="contact-icon">📞</div>
-          <div>
-            <h4>Phone</h4>
-            <p>Main Switchboard: +27 12 345 6789<br>Emergency: +27 12 345 6799<br>Appointments: +27 12 345 6780</p>
-          </div>
-        </div>
-
-        <div class="contact-detail">
-          <div class="contact-icon">✉️</div>
-          <div>
-            <h4>Email</h4>
-            <p>info@qualitycarehospital.co.za<br>appointments@qualitycarehospital.co.za</p>
-          </div>
-        </div>
-
-        <div class="contact-detail">
-          <div class="contact-icon">🕐</div>
-          <div>
-            <h4>Hours</h4>
-            <p>
-              Emergency Department: <strong>24/7</strong><br>
-              Outpatient Clinics: Mon–Fri 07:00–18:00<br>
-              Visiting Hours: Mon–Sun 10:00–12:00 &amp; 15:00–19:00<br>
-              Pharmacy: Mon–Fri 08:00–20:00, Sat 08:00–17:00
-            </p>
-          </div>
-        </div>
-
-        <div class="contact-detail">
-          <div class="contact-icon">🏥</div>
-          <div>
-            <h4>Medical Aid</h4>
-            <p>We accept all major medical aid schemes. Please bring your membership details and referral letter (if required) to your appointment.</p>
-          </div>
-        </div>
-
-        <!-- Map placeholder -->
-        <div style="margin-top: 24px; background: var(--primary-light); border-radius: var(--radius); min-height: 200px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--border); color: var(--text-light);">
-          [INSERT MAP: Google Maps embed showing 123 Hospital Road, Durban]
-        </div>
-      </div>
-    </div>
+  <!-- Map -->
+  <section class="home-map-section">
+    <div>[INSERT MAP: 83 Grobler Street, Louis Trichardt, Limpopo]</div>
   </section>
 
   <!-- CTA -->
@@ -170,53 +119,38 @@
     <div class="container">
       <h2>Emergency? We're Here 24/7</h2>
       <p>Our emergency department is open around the clock. Call us or come in — no appointment needed.</p>
-      <div class="btn-group" style="justify-content: center;">
-        <a href="tel:+271****6799" class="btn btn-primary">Call Emergency: +27 12 345 6799</a>
-        <a href="#" class="btn btn-outline">Get Directions</a>
+      <div class="btn-group" style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+        <a href="tel:+271****5440" class="btn-white">Call Emergency</a>
+        <a href="#" class="btn-outline">Get Directions</a>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="index.html" class="logo">
-            <div class="logo-icon">Q</div>
-            Quality<span>Care</span>
-          </a>
-          <p>Excellence in private healthcare. Serving our community with compassion, skill, and integrity for over 25 years.</p>
-        </div>
-        <div>
-          <h4>Quick Links</h4>
-          <a href="index.html">Home</a>
-          <a href="about.html">About Us</a>
-          <a href="services.html">Our Services</a>
-          <a href="careers.html">Careers</a>
-          <a href="contact.html">Contact</a>
-        </div>
-        <div>
-          <h4>Services</h4>
-          <a href="services.html">Cardiology</a>
-          <a href="services.html">Orthopaedics</a>
-          <a href="services.html">Maternity</a>
-          <a href="services.html">Diagnostics</a>
-          <a href="services.html">Emergency</a>
-        </div>
-        <div>
-          <h4>Contact</h4>
-          <a href="#">123 Hospital Road, Durban</a>
-          <a href="tel:+271****6789">+27 12 345 6789</a>
-          <a href="mailto:info@qualitycarehospital.co.za">info@qualitycarehospital.co.za</a>
-          <a href="contact.html">Get Directions</a>
-        </div>
+  <footer class="footer-main">
+    <div class="footer-main-container">
+      <div class="footer-left">
+        <img alt="Logo" class="footer-logo" src="assets/images/logo.jpg" onerror="this.style.display='none'">
+        <h3>About Us</h3>
+        <p>Quality Care Hospital is committed to providing exceptional healthcare services with compassion and expertise.</p>
+        <a class="footer-btn" href="#">Find a Doctor<svg class="footer-btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg></a>
+        <a class="footer-btn" href="careers.html">Explore Careers<svg class="footer-btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg></a>
+        <a class="footer-btn" href="blog.html">Sign Up for free E-Newsletters<svg class="footer-btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg></a>
       </div>
-      <div class="footer-bottom">
-        <span>&copy; <span id="year">2026</span> Quality Care Private Hospital. All rights reserved.</span>
-        <span>Site by <a href="https://pawatech.co.za">PawaTech</a></span>
+      <div class="footer-center">
+        <div class="footer-group"><h4>Wards &gt;</h4><ul><li><a href="services.html">General Ward</a></li><li><a href="services.html">Private Room</a></li><li><a href="services.html">Maternity &amp; Gynae Ward</a></li><li><a href="services.html">Postnatal Care</a></li><li><a href="services.html">Neonatal ICU</a></li><li><a href="services.html">Pre-Baby Support</a></li></ul></div>
+        <div class="footer-group"><h4>Our Services &gt;</h4><ul><li><a href="services.html">Antenatal Care</a></li><li><a href="services.html">Maternity &amp; Day Services</a></li><li><a href="services.html">Ultrasound</a></li><li><a href="services.html">Menopause Care</a></li></ul></div>
+        <div class="footer-group"><h4>Patient Amenities &gt;</h4><ul><li>Waiting Area</li><li>Parking Area</li><li>Directions</li></ul></div>
+      </div>
+      <div class="footer-right">
+        <div class="footer-group"><h4>Contact Us</h4><p class="footer-contact-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>83 Grobler Street, Louis Trichardt</p><p class="footer-contact-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>015 516 5439</p><p class="footer-contact-item"><svg width="16" height="16" viewBox="0 0 448 512" fill="currentColor"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157z"/></svg>063 985 5425</p><p class="footer-contact-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>admin@qualitycarehospital.co.za</p></div>
+        <div class="footer-group"><h4>Pharmacy &gt;</h4><ul><li>In-Patient Prescriptions</li><li>Out-Patient Pharmacy</li><li>Medication Counseling</li></ul></div>
+        <div class="footer-group"><h4>Laboratory &gt;</h4><ul><li>Lancet Laboratories are on site.</li><li class="footer-link"><a href="https://www.lancet.co.za/" target="_blank">Visit Lancet Website</a></li></ul></div>
       </div>
     </div>
+    <hr class="footer-divider">
+    <div class="footer-links"><a href="#">Terms &amp; Conditions</a><a href="#">Privacy Policy</a><a href="#">Notice of Privacy Practices</a><a href="#">Notice of Nondiscrimination</a><a href="#">Digital Accessibility Statement</a><a href="#">Advertising &amp; Sponsorship Policy</a></div>
+    <div class="footer-bottom"><p>We are dedicated to maintaining transparency, privacy, and accessibility in all our services.</p><div class="footer-bottom-right"><div class="footer-language-select"><p>Language:</p><select class="footer-language-dropdown"><option>English</option></select></div><button class="footer-feedback-btn" onclick="window.location='contact.html'">Feedback</button></div></div>
   </footer>
 
   <script src="assets/js/main.js"></script>
