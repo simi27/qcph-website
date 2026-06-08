@@ -201,6 +201,7 @@ Lists should be separated by thin, low-contrast dividers. Use Teal bullet points
   --c-outline: #6e7979;
   --c-outline-variant: #bdc9c8;
   --c-error: #ba1a1a;
+  --c-gold: #e0a92e;
 }
 ```
 
